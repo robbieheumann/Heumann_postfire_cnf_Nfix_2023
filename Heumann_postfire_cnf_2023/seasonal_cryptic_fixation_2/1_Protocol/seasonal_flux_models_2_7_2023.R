@@ -52,6 +52,8 @@ annual_combined_flux <- seasonal_fluxes %>% group_by(niche) %>%
 annual_combined_flux <- annual_combined_flux %>% mutate(season = "annual", se = sum(se_flux), total_flux = sum(combined_mean_flux))
 seasonal_annual_fluxes <- rbind(annual_combined_flux, seasonal_fluxes)
 
+median_fluxes <- combined_4seas_fluxes_2_6_2023 %>% group_by(season, niche) %>%
+  summarize(median_flux = median(flux_kgN_ha_season))
 
 ### remove niche grouping
 seasonal_fluxes_noniche <- seasonal_fluxes %>% group_by(season) %>%
@@ -278,17 +280,6 @@ ggplot(annual_fluxes) +
   theme_bw(base_size = 18) +
   theme(legend.position = "none") +
   theme(legend.background = element_rect(colour = 'black', fill = 'white', linetype='solid'))
-
-
-### some basic summary stats for paper
-## total n fix inputs
-sum(annual_fluxes$annual_flux)
-(0.0725+0.081+0.0523)/0.21
-
-## is plot a significant predictor of CNF?
-combined_4seas_fluxes_2_6_2023
-summary(lm(flux_kgN_ha_season ~ season+niche+site+mean_moist, data = combined_3seas_fluxes_2_6_2023))
-anova(lm(flux_kgN_ha_season ~ season+niche+site+mean_moist, data = combined_3seas_fluxes_2_6_2023))
 
 
 
