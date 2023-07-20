@@ -191,8 +191,8 @@ slw_combined %>% filter(slw_combined$flux_nmol_c2h4_g_hr_med_corr >0) %>% summar
 
 ## the plots I want with the two data sets to use for analysis:
 
-write_excel_csv(slw_combined, 'C:/Users/rh176228/Desktop/cryptic_fixation/cryptic_clim_exp_2022/1_incremental/slw_combined_fluxes_03_13_2023.csv')
-write_excel_csv(slw_comb_sum, 'C:/Users/rh176228/Desktop/cryptic_fixation/cryptic_clim_exp_2022/1_incremental/slw_combined_flux_summary_03_13_2023.csv')
+write_excel_csv(slw_combined, 'cryptic_clim_exp_2022/1_incremental/slw_combined_fluxes_03_13_2023.csv')
+write_excel_csv(slw_comb_sum, 'cryptic_clim_exp_2022/1_incremental/slw_combined_flux_summary_03_13_2023.csv')
 
 
 

@@ -5,7 +5,7 @@ library(tidyverse)
 library(readxl)
 getwd()
 #### Import "final_clim_exp_fluxes" from incremental folder in git
-Combined_clim_exp_flux_calcs <- read_csv("C:/Users/rh176228/Desktop/cryptic_fixation/cryptic_clim_exp_2022/1_incremental/final_clim_exp_fluxes.csv")
+Combined_clim_exp_flux_calcs <- read_csv("cryptic_clim_exp_2022/1_incremental/final_clim_exp_fluxes.csv")
 
 fluxes <- Combined_clim_exp_flux_calcs
 

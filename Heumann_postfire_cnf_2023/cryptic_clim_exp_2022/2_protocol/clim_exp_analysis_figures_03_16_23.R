@@ -1,8 +1,6 @@
 library(tidyverse)
-
 ### import slw_combined and slw_comb_sum
-setwd("C:/Users/rh176228/Desktop/cryptic_fixation")
-slw_combined <- read_csv("C:/Users/rh176228/Desktop/cryptic_fixation/cryptic_clim_exp_2022/1_incremental/slw_combined_fluxes_03_13_2023.csv")
+slw_combined <- read_csv("cryptic_clim_exp_2022/1_incremental/slw_combined_fluxes_03_13_2023.csv")
 slw_comb_sum <- read_csv("cryptic_clim_exp_2022/1_incremental/slw_combined_flux_summary_03_13_2023.csv")
 
 ggplot(slw_combined, aes(x = flux_nmol_c2h4_g_hr_med_corr)) + geom_histogram()
