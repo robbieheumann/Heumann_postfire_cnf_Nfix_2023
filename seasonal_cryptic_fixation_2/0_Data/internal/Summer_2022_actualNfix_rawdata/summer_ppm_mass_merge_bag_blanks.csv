@@ -1,7 +1,0 @@
-sample_name,sample_ID,niche,Treatment,species,tin_no,tin_mass,tin_wet_mass,tin _dry_mass,dry_mass,moist,1.5s_area,ppm,corrected_ppm,Bag_ID
-1,Blank,,,,,,,,,,4065.2,2.251616,,A
-2,Blank,,,,,,,,,,8220.6,2.584048,,A
-1,Blank,,,,,,,,,,10565.4,2.771632,,B
-2,Blank,,,,,,,,,,14762.6,3.107408,,B
-3,Blank,,,,,,,,,,7328.3,1.065564,,C
-4,Blank,,,,,,,,,,16993.6,1.838788,,C
